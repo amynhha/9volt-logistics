@@ -2,7 +2,9 @@ import "../App.css";
 import NavBar from "../component/NavBar";
 import Hero from "../component/Hero";
 import Button from "../component/Button";
+import Reason from "../component/Reason";
 import heroImage1 from "../assets/hero1.png";
+import AboutSection from "../component/AboutSection"
 
 export default function Home() {
     return (
@@ -20,14 +22,17 @@ export default function Home() {
                     "Transportation solutions tailored to your business needs",
                 ]}
             >
-                <Button variant="gold">
+                <Button variant="gold" link="/shippers">
                     Get a Freight Quote
                 </Button>
 
-                <Button variant="navy">
+                <Button variant="navy" link="/carriers">
                     Become a Carrier
                 </Button>
             </Hero>
+
+            <Reason />
+            <AboutSection />
         </>
     );
 }
