@@ -1,0 +1,48 @@
+:root {
+  --font-heading: "Cardo", serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-navy: #010E23;
+  --color-gold: #D4AF6A;
+  --color-white: #FFFFFF;
+  --color-light: #F7F7F7;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.btn-gold {
+    background-color: var(--color-gold);
+    color: var(--color-navy);
+    font-family: "Cardo", serif;
+    border: none;
+}
+
+.btn-gold:hover {
+    background-color: #d9a73d;
+    color: var(--color-navy);
+}
+
+.btn-navy {
+    background-color:  var(--color-navy);
+    color: var(--color-gold);
+    font-family: "Cardo", serif;
+    border: none;
+}
+
+.btn-navy:hover {
+    background-color: #102749;
+    color: var(--color-gold);
+}

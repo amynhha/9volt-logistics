@@ -1,0 +1,164 @@
+:root {
+  --font-heading: "Cardo", serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-navy: #102749;
+  --color-gold: #D4AF6A;
+  --color-white: #FFFFFF;
+  --color-light: #F7F7F7;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+/* HERO */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 20, 35, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text {
+    max-width: 550px;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    opacity: 0.95;
+}
+
+.hero-list {
+    margin-bottom: 2rem;
+    padding-left: 1.2rem;
+}
+
+.hero-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Hero Mobile */
+
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-text {
+        margin: auto;
+    }
+
+    .hero-list {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+
+/* BUTTON */
+
+.btn-custom {
+  width: min(20.5rem, 100%);
+  height: 2.7rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--font-heading);
+  font-weight: 700;
+
+  border: none;
+  transition: all .25s ease;
+}
+
+.btn-gold {
+  background-color: var(--color-gold);
+  color: var(--color-navy);
+}
+
+.btn-gold:hover {
+  background-color: #d9a73d;
+  color: var(--color-navy);
+}
+
+.btn-navy {
+  background-color: var(--color-navy);
+  color: var(--color-gold);
+}
+
+.btn-navy:hover {
+  background-color: #010E23;
+  color: var(--color-gold);
+}
+
+.btn-custom:focus,
+.btn-custom:focus-visible {
+  box-shadow: none;
+}
+
+.btn-custom {
+  transition: all 0.25s ease;
+}
+
+.btn-custom:hover {
+  transform: translateY(-2px);
+}
+
+/* BUTTON MOBILE */
+
+@media (max-width: 768px) {
+    .btn-custom {
+        height: 4rem;
+        font-size: 1.25rem;
+    }
+}
