@@ -16,7 +16,7 @@ export default function Home() {
                 subtext={[
                     "Fast and dependable freight coordination",
                     "Professional carrier partnerships",
-                    "Real-time communication and shipment updates",
+                    "Real-time  communication and shipment updates",
                     "Transportation solutions tailored to your business needs",
                 ]}
             >
@@ -24,7 +24,7 @@ export default function Home() {
                     Get a Freight Quote
                 </Button>
 
-                <Button variant="dark">
+                <Button variant="navy">
                     Become a Carrier
                 </Button>
             </Hero>

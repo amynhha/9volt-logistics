@@ -1,24 +1,55 @@
-import "../App.css"
+import "../App.css";
+import { NavLink } from "react-router-dom";
+import Button from "./Button";
+import logo from "../assets/logo.png";
 
 export default function NavBar() {
+    const navItems = [
+        { name: "Home", path: "/home" },
+        { name: "Services", path: "/services" },
+        { name: "Shippers", path: "/shippers" },
+        { name: "Carriers", path: "/carriers" },
+        { name: "About Us", path: "/about" },
+        { name: "Contact", path: "/contact" },
+    ];
+
     return (
-        <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="#">Navbar</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div className="navbar-nav">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            <a className="nav-link" href="#">Features</a>
-                            <a className="nav-link" href="#">Pricing</a>
-                            <a className="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </div>
-                    </div>
+        <nav className="custom-navbar">
+            <div className="navbar-container">
+
+                {/* Logo */}
+                <NavLink to="/home" className="logo">
+                    <img 
+                        src={logo} 
+                        alt="9Volt Logistics" 
+                    />
+                </NavLink>
+
+
+                {/* Navigation */}
+                <div className="nav-links">
+                    {navItems.map((item) => (
+                        <NavLink
+                            key={item.path}
+                            to={item.path}
+                            className={({ isActive }) =>
+                                isActive 
+                                ? "nav-item active" 
+                                : "nav-item"
+                            }
+                        >
+                            {item.name}
+                        </NavLink>
+                    ))}
                 </div>
-            </nav>
-        </>
+
+
+                {/* Button */}
+                <Button variant="gold">
+                    Login
+                </Button>
+
+            </div>
+        </nav>
     );
 }

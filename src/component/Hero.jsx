@@ -14,7 +14,7 @@ export default function Hero({
         >
             <div className="hero-overlay"></div>
 
-            <div className="container hero-content">
+            <div className="hero-content">
                 <div className="hero-text">
                     <h1>{title}</h1>
 
