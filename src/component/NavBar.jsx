@@ -11,7 +11,7 @@ export default function NavBar() {
         { name: "Shippers", path: "/shippers" },
         { name: "Carriers", path: "/carriers" },
         { name: "About Us", path: "/about" },
-        { name: "Contact", path: "/contact" },
+        { name: "Contact Us", path: "/contact" },
     ];
 
     const [hovered, setHovered] = useState(null);
