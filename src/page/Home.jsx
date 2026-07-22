@@ -2,9 +2,12 @@ import "../App.css";
 import NavBar from "../component/NavBar";
 import Hero from "../component/Hero";
 import Button from "../component/Button";
-import Reason from "../component/Reason";
+import ReasonCard from "../component/ReasonCard";
 import heroImage1 from "../assets/hero1.png";
-import AboutSection from "../component/AboutSection"
+import AboutSection from "../component/AboutSection";
+import Slider from "../component/Slider";
+import Comparison from "../component/Comparison";
+import Paginator from "../component/Paginator";
 
 export default function Home() {
     return (
@@ -31,8 +34,12 @@ export default function Home() {
                 </Button>
             </Hero>
 
-            <Reason />
+            <ReasonCard />
             <AboutSection />
+            <Slider />
+            <Comparison />
+            <Paginator />
+            
         </>
     );
 }

@@ -8,6 +8,7 @@ import Shippers from "./page/Shippers";
 import Carriers from "./page/Carriers";
 import About from "./page/About";
 import Contact from "./page/Contact";
+import Legal from "./page/Legal";
 
 export default function App() {
     return (
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="/carriers" element={<Carriers />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/legal" element={<Legal />} />
         </Routes>
     );
 }
