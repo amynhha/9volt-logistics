@@ -1,7 +1,7 @@
 import aboutUs from "../assets/aboutUs.png";
 import "../App.css";
 import Button from "../component/Button";
-import about from "../assets/about.jpg";
+import aboutUs from "../assets/aboutUs.png";
 
 export default function AboutSection() {
   return (
@@ -26,7 +26,7 @@ export default function AboutSection() {
             ))}
           </div>
 
-          <img src={about} alt="About Us" />
+          <img src={aboutUs} alt="About Us" />
         </div>
 
         {/* RIGHT */}
