@@ -2,6 +2,7 @@ import "../App.css";
 import NavBar from "../component/NavBar";
 import Hero from "../component/Hero";
 import contact from "../assets/contact.jpg"
+import Paginator from "../component/Paginator";
 
 export default function Contact() {
     return (
@@ -19,6 +20,7 @@ export default function Contact() {
                 ]}
             >
             </Hero>
+            <Paginator />
         </div>
     );
 
