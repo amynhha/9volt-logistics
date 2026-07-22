@@ -2,6 +2,7 @@ import "../App.css";
 import NavBar from "../component/NavBar";
 import Hero from "../component/Hero";
 import aboutUsWider from "../assets/aboutUs_wider.png";
+import Paginator from "../component/Paginator";
 
 export default function About() {
     return (
@@ -19,6 +20,7 @@ export default function About() {
                 ]}
             >
             </Hero>
+            <Paginator />
         </div>
     );
 }
