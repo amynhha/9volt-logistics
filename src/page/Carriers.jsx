@@ -2,6 +2,7 @@ import "../App.css";
 import NavBar from "../component/NavBar";
 import Hero from "../component/Hero";
 import carrier from "../assets/carrier.jpg";
+import Paginator from "../component/Paginator";
 
 export default function Carriers() {
     return (
@@ -19,6 +20,7 @@ export default function Carriers() {
                 ]}
             >
             </Hero>
+            <Paginator />
         </div>
     );
 }
