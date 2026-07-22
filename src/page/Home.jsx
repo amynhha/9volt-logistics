@@ -13,7 +13,6 @@ export default function Home() {
     return (
         <>
             <NavBar />
-
             <Hero
                 img={heroImage1}
                 title="9Volt Logistics"
@@ -33,13 +32,12 @@ export default function Home() {
                     Become a Carrier
                 </Button>
             </Hero>
-
-            <ReasonCard />
-            <AboutSection />
-            <Slider />
             <Comparison />
+            <ReasonCard />
+            <Slider />
+            <AboutSection />
             <Paginator />
-            
+
         </>
     );
 }
