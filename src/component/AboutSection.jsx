@@ -1,7 +1,6 @@
 import aboutUs from "../assets/aboutUs.png";
 import "../App.css";
 import Button from "../component/Button";
-import aboutUs from "../assets/aboutUs.png";
 
 export default function AboutSection() {
   return (
