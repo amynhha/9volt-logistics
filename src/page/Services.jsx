@@ -3,6 +3,7 @@ import Hero from "../component/Hero";
 import Button from "../component/Button";
 import NavBar from "../component/NavBar";
 import heroImage2 from "../assets/hero2.png";
+import Paginator from "../component/Paginator";
 
 export default function Services() {
     return (
@@ -27,6 +28,7 @@ export default function Services() {
                 </Button>
 
             </Hero>
+            <Paginator />
         </div>
     );
 }
