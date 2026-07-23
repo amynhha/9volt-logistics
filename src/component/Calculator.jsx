@@ -10,7 +10,7 @@ import {
     FaArrowRight,
 } from "react-icons/fa";
 import { freightOptions } from "../utils/freightOptions";
-import { calculateEstimate } from "../utils/calculateEstimate";
+import { calculateEstimate } from "../utils/CalculateEstimate";
 import { getDistance } from "../utils/distanceApi";
 import Select from "react-select";
 
