@@ -3,6 +3,7 @@ import NavBar from "../component/NavBar";
 import Hero from "../component/Hero";
 import shipper from "../assets/shipper.jpg";
 import Paginator from "../component/Paginator";
+import QuoteSection from "../component/QuoteSection";
 
 export default function Shippers() {
     return (
@@ -20,6 +21,7 @@ export default function Shippers() {
                 ]}
             >
             </Hero>
+             <QuoteSection />
             <Paginator />
         </div>
     );

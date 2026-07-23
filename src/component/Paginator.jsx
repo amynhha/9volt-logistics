@@ -56,7 +56,7 @@ export default function Paginator() {
                             <FaLinkedinIn />
                         </a>
 
-                        <a href="#">
+                        <a href="https://www.facebook.com/profile.php?id=61592158836378">
                             <FaFacebookF />
                         </a>
 
