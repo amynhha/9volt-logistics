@@ -3,6 +3,7 @@ import NavBar from "../component/NavBar";
 import Hero from "../component/Hero";
 import contact from "../assets/contact.jpg"
 import Paginator from "../component/Paginator";
+import Button from "../component/Button";
 
 export default function Contact() {
     return (
@@ -10,15 +11,12 @@ export default function Contact() {
             <NavBar />
             <Hero
                 img={contact}
-                title="Let's Keep Your Freight Moving"
-                text="Whether you're looking for shipping solutions, carrier partnerships, or simply have a question, our team is ready to help. Reach out today and we'll respond as quickly as possible."
-                subtext={[
-                    "Request a freight quote",
-                    "Become a carrier partner",
-                    "Speak with our logistics specialists",
-                    "Fast responses and personalized support",
-                ]}
+                title="We’re Ready, Are You?"
+                text="Have a question, need a custom quote, or want to partner up? Our team is available 24/7 to keep your business moving forward."
             >
+                <Button variant="gold">
+                    Get in Touch Now
+                </Button>
             </Hero>
             <Paginator />
         </div>

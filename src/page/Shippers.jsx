@@ -4,6 +4,7 @@ import Hero from "../component/Hero";
 import shipper from "../assets/shipper.jpg";
 import Paginator from "../component/Paginator";
 import QuoteSection from "../component/QuoteSection";
+import Button from "../component/Button";
 
 export default function Shippers() {
     return (
@@ -11,15 +12,12 @@ export default function Shippers() {
             <NavBar />
             <Hero
                 img={shipper}
-                title="Reliable Freight Solutions"
-                text="Whether you're moving a single load or managing a complex supply chain, 9Volt Logistics connects you with dependable carriers to ensure your freight arrives safely, on time, and within budget."
-                subtext={[
-                    "Access to a trusted nationwide carrier network",
-                    "Competitive rates with transparent pricing",
-                    "Real-time communication and shipment updates",
-                    "Flexible solutions for full truckload (FTL) and less-than-truckload (LTL) freight",
-                ]}
+                title="Ship Smarter"
+                text="Connect your cargo with a vetted nationwide carrier network. Get real-time tracking, transparent pricing, and zero delays."
             >
+                <Button variant="gold">
+                    Calculate Freight Rate
+                </Button>
             </Hero>
              <QuoteSection />
             <Paginator />

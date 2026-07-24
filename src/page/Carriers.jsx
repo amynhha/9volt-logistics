@@ -3,6 +3,7 @@ import NavBar from "../component/NavBar";
 import Hero from "../component/Hero";
 import carrier from "../assets/carrier.jpg";
 import Paginator from "../component/Paginator";
+import Button from "../component/Button";
 
 export default function Carriers() {
     return (
@@ -10,15 +11,15 @@ export default function Carriers() {
             <NavBar />
             <Hero
                 img={carrier}
-                title="Become Our Partner"
-                text="We work alongside professional carriers to provide consistent freight opportunities, prompt communication, and long-term partnerships built on trust and reliability."
-                subtext={[
-                    "Quality freight opportunities across the country",
-                    "Fast, responsive support from our logistics team",
-                    "Quick issue resolution and clear communication",
-                    "Long-term relationships with dependable partners",
-                ]}
+                title="Haul Better"
+                text="Access high-paying consistent loads, quick payment options, and 24/7 dedicated dispatch support across the nation."
             >
+                <Button variant="gold">
+                    Become a Partner Carrier
+                </Button>
+                <Button variant="navy">
+                    View Partner Benefits
+                </Button>
             </Hero>
             <Paginator />
         </div>

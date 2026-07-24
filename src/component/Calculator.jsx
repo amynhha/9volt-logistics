@@ -212,7 +212,6 @@ export default function Calculator({ onContinue }) {
                             placeholder="Select type"
                             isDisabled={locked}
                             menuPortalTarget={document.body}
-                            menuPosition="fixed"
                             value={freightOptions.find(o => o.value === form.freightType) || null}
                             onChange={(selected) =>
                                 setForm(prev => ({ ...prev, freightType: selected?.value || "" }))

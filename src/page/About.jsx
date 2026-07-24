@@ -3,6 +3,7 @@ import NavBar from "../component/NavBar";
 import Hero from "../component/Hero";
 import aboutUsWider from "../assets/aboutUs_wider.png";
 import Paginator from "../component/Paginator";
+import Button from "../component/Button";
 
 export default function About() {
     return (
@@ -10,15 +11,15 @@ export default function About() {
             <NavBar />
             <Hero
                 img={aboutUsWider}
-                title="Move Your Freight With Confidence"
-                text="At 9Volt Logistics, we believe transportation should be simple, dependable, and built on strong relationships. Our team is dedicated to connecting shippers with trusted carriers while delivering exceptional service every step of the way."
-                subtext={[
-                    "Customer-focused logistics solutions",
-                    "Experienced professionals committed to reliability",
-                    "Honest communication and transparent service",
-                    "Dedicated to building lasting partnerships",
-                ]}
+                title="Your High Voltage Alliance"
+                text="We started 9Volt Logistics to bridge the gap between shippers who demand clarity and carriers who deserve fair partnerships."
             >
+                <Button variant="gold">
+                    Meet Our Team
+                </Button>
+                <Button variant="navy">
+                    See Our Covergae
+                </Button>
             </Hero>
             <Paginator />
         </div>

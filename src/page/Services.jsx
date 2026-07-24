@@ -12,21 +12,16 @@ export default function Services() {
 
             <Hero
                 img={heroImage2}
-                title=
-                "Freight Solutions You Can Trust"
-                text="At 9Volt Logistics, we provide reliable 
-                freight brokerage services backed by responsive
-                communication, trusted carrier partnerships, 
-                and personalized support. Whether you're shipping
-                a single load or managing ongoing freight, we're 
-                committed to delivering dependable transportation 
-                solutions tailored to your business.
+                title="Smart Freight Solutions"
+                text="Whether you need temp-controlled reefer freight, dedicated dry vans, fleet box trucks, or heavy flatbed transport—we connect your cargo with fully vetted carriers nationwide.
                 "
             >
                 <Button variant="gold">
-                    Request a Quote
+                    Request Equipment Quote
                 </Button>
-
+                <Button variant="navy">
+                    Talk to a Specialist
+                </Button>
             </Hero>
             <Paginator />
         </div>
