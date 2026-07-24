@@ -32,10 +32,10 @@ const services = [
     }
 ];
 
-export default function Slider() {
+export default function Slider({ id }) {
 
     return (
-        <section className="services">
+        <section id={id} className="services">
             <h2>Our Services</h2>
 
             <div className="slider-wrapper">

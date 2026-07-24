@@ -1,77 +1,79 @@
-import aboutUs from "../assets/aboutUs.png";
 import "../App.css";
-import Button from "../component/Button";
+import communicate from "../assets/communicate.png";
+import dispatch from "../assets/dispatch.png";
 
 export default function AboutSection() {
-  return (
-    <section className="about-section">
-      <div className="about-container">
+    return (
+        <section className="about-section">
 
-        {/* LEFT */}
-        <div className="about-image">
+            <div className="about-header">
+                <h1>THE 9VOLT DIFFERENCE</h1>
 
-          <div className="corner top-left"></div>
-          <div className="corner bottom-left"></div>
+                <p>
+                    At <span>9Volt Logistics</span>, we deliver dependable freight
+                    solutions built on professionalism, trust, and unwavering
+                    commitment. We connect shippers with reliable carrier partners,
+                    providing seamless transportation services anytime, anywhere,
+                    for virtually any type of freight.
+                </p>
+            </div>
 
-          <div className="bars top-bars">
-            {[...Array(8)].map((_, i) => (
-              <span key={i}></span>
-            ))}
-          </div>
+            <div className="about-grid">
 
-          <div className="bars bottom-bars">
-            {[...Array(6)].map((_, i) => (
-              <span key={i}></span>
-            ))}
-          </div>
+                <div className="about-image-card">
+                    <img src={communicate} alt="Mission" />
+                </div>
 
-          <img src={aboutUs} alt="About Us" />
-        </div>
+                <div className="about-text">
+                    <h2>Our Mission</h2>
 
-        {/* RIGHT */}
-        <div className="about-content">
+                    <p>
+                        Our approach is simple: build lasting relationships,
+                        communicate with transparency, and execute every shipment
+                        with precision. Every load represents a promise to our
+                        customers, and we take that responsibility seriously.
+                    </p>
+                </div>
 
-          <div className="bars right-top-bars">
-            {[...Array(8)].map((_, i) => (
-              <span key={i}></span>
-            ))}
-          </div>
+                <div className="about-stat">
+                    <h2>24/7</h2>
 
-          <div className="top-line"></div>
+                    <h3>RESPONSIVE COMMUNICATION</h3>
 
-          <h2>About Us</h2>
+                    <p>
+                        Keeping shippers and carriers informed through every
+                        stage of the shipping process.
+                    </p>
+                </div>
 
-          <div className="middle-line"></div>
+                <div className="about-image-card">
+                    <img src={dispatch} alt="Warehouse" />
+                </div>
 
-          <p>
-            9Volt Logistics LLC is a Nebraska-based freight brokerage dedicated
-            to connecting businesses with reliable transportation solutions
-            across the United States.
-            <br />
-            <br />
-            We pride ourselves on responsive service, trusted carrier
-            partnerships, and clear communication, ensuring every shipment is
-            handled with care from pickup to delivery.
-            <br />
-            <br />
-            Our mission is simple: provide dependable logistics solutions that
-            help our customers move forward with confidence.
-          </p>
+                <div className="about-stat large">
+                    <h2>ONE</h2>
 
-          <Button variant="gold"  link="/about">
-            Get to Know Us Better
-          </Button>
+                    <h3>TRUSTED PARTNER</h3>
 
-          <div className="bars bottom-content-bars">
-            {[...Array(8)].map((_, i) => (
-              <span key={i}></span>
-            ))}
-          </div>
+                    <p>
+                        From pickup to delivery, we provide dependable logistics
+                        solutions tailored to every shipment.
+                    </p>
+                </div>
 
-          <div className="bottom-line"></div>
+                <div className="about-closing">
+                    <h2>Driven by Excellence</h2>
 
-        </div>
-      </div>
-    </section>
-  );
+                    <p>
+                        We don't just move freight—we build confidence. Through
+                        integrity, accountability, and exceptional service, we
+                        strive to be the logistics partner businesses trust for
+                        every mile ahead.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+    );
 }

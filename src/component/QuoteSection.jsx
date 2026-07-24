@@ -2,7 +2,7 @@ import { useState } from "react";
 import Calculator from "./Calculator";
 import GetQuote from "./GetQuote";
 
-export default function QuoteSection() {
+export default function QuoteSection({ id }) {
     const [showQuote, setShowQuote] = useState(false);
 
     const [quoteData, setQuoteData] = useState({
@@ -56,7 +56,7 @@ export default function QuoteSection() {
     };
 
     return (
-        <section className="quote-section">
+        <section id={id} className="quote-section">
 
             <div className="quote-wrapper">
 

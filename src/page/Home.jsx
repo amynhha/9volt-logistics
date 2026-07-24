@@ -4,7 +4,7 @@ import Hero from "../component/Hero";
 import Button from "../component/Button";
 import ReasonCard from "../component/ReasonCard";
 import heroImage1 from "../assets/hero1.png";
-import AboutSection from "../component/AboutSection";
+import HomeAbout from "../component/HomeAbout";
 import Slider from "../component/Slider";
 import Comparison from "../component/Comparison";
 import Paginator from "../component/Paginator";
@@ -35,7 +35,7 @@ export default function Home() {
             <Comparison />
             <ReasonCard />
             <Slider />
-            <AboutSection />
+            <HomeAbout />
             <Paginator />
 
         </>

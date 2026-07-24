@@ -2679,6 +2679,220 @@ textarea:disabled {
   color: rgba(255, 255, 255, .65);
 }
 
+/* =========================
+   ABOUT
+========================== */
+
+.about-section{
+
+    width:100%;
+
+    padding:120px 8%;
+
+    background:#0f1722;
+
+    color:white;
+
+}
+
+
+
+.about-header{
+
+    max-width:900px;
+
+    margin:0 auto 90px;
+
+    text-align:center;
+
+}
+
+
+
+.about-header h1{
+
+    font-family:var(--font-heading);
+
+    font-size:4rem;
+
+    letter-spacing:8px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.about-header span{
+
+    color:var(--color-gold);
+
+}
+
+
+
+.about-header p{
+
+    color:#b9c3cf;
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+}
+
+
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+
+
+.about-image-card img{
+
+    width:100%;
+
+    border-radius:18px;
+
+    display:block;
+
+    object-fit:cover;
+
+    height:520px;
+
+}
+
+
+
+.about-text h2,
+
+.about-closing h2{
+
+    font-family:var(--font-heading);
+
+    font-size:2.4rem;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.about-text p,
+
+.about-closing p{
+
+    color:#b9c3cf;
+
+    line-height:2;
+
+}
+
+
+
+.about-stat h2{
+
+    font-family:var(--font-heading);
+
+    font-size:5rem;
+
+    color:var(--color-gold);
+
+    margin-bottom:20px;
+
+}
+
+
+
+.about-stat.large h2{
+
+    font-size:4.8rem;
+
+}
+
+
+
+.about-stat h3{
+
+    font-size:1.3rem;
+
+    letter-spacing:3px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.about-stat p{
+
+    color:#b9c3cf;
+
+    line-height:1.9;
+
+    max-width:330px;
+
+}
+
+
+
+.about-closing{
+
+    max-width:500px;
+
+}
+
+
+
+@media (max-width:900px){
+
+
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+
+
+    .about-header h1{
+
+        font-size:3rem;
+
+    }
+
+
+
+    .about-image-card img{
+
+        height:360px;
+
+    }
+
+
+
+    .about-stat h2{
+
+        font-size:4rem;
+
+    }
+
+
+
+}
+
 /* ===========================
 
    TABLET (768px - 1199px)

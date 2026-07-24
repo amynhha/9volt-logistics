@@ -15,11 +15,19 @@ export default function Shippers() {
                 title="Ship Smarter"
                 text="Connect your cargo with a vetted nationwide carrier network. Get real-time tracking, transparent pricing, and zero delays."
             >
-                <Button variant="gold">
+                <Button variant="gold"
+                    onClick={() =>
+                        document
+                            .getElementById("quote")
+                            ?.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                            })
+                    }>
                     Calculate Freight Rate
                 </Button>
             </Hero>
-             <QuoteSection />
+            <QuoteSection id="quote"/>
             <Paginator />
         </div>
     );
