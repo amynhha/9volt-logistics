@@ -16,8 +16,8 @@ export default function Services() {
                 text="Whether you need temp-controlled reefer freight, dedicated dry vans, fleet box trucks, or heavy flatbed transport—we connect your cargo with fully vetted carriers nationwide.
                 "
             >
-                <Button variant="gold">
-                    Request Equipment Quote
+                <Button variant="gold" link="/shippers#quote">
+                    Request a Freight Quote
                 </Button>
                 <Button variant="navy">
                     Talk to a Specialist

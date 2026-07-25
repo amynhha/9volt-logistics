@@ -24,7 +24,7 @@ export default function Home() {
                     "Transportation solutions tailored to your business needs",
                 ]}
             >
-                <Button variant="gold" link="/shippers">
+                <Button variant="gold" link="/shippers#quote">
                     Get a Freight Quote
                 </Button>
 

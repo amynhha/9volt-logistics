@@ -1,8 +1,8 @@
-import founder from "../assets/founder.jpg";
+import founder from "../assets/hasan.jpg";
 import Button from "./Button";
 import "../App.css";
 
-export default function Founder({ id }) {
+export default function AboutFounder({ id }) {
     return (
         <section id={id} className="founder-section">
             <div className="founder-card">
@@ -26,7 +26,7 @@ export default function Founder({ id }) {
                         to bring a higher standard of reliability to the road. 
                     </p>
 
-                    <Button variant="gold">
+                    <Button variant="gold" link="/founder">
                         Learn More
                     </Button>
 

@@ -6,7 +6,7 @@ import Paginator from "../component/Paginator";
 import Button from "../component/Button";
 import AboutSection from "../component/AboutSection";
 import Slider from "../component/Slider";
-import Founder from "../component/Founder";
+import AboutFounder from "../component/AboutFounder";
 
 export default function About() {
     return (
@@ -49,7 +49,7 @@ export default function About() {
             </Hero>
 
             <AboutSection />
-            <Founder id="founder" />
+            <AboutFounder id="founder" />
             <Slider id="services" />
             
             <Paginator />
