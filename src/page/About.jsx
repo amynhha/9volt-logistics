@@ -6,6 +6,7 @@ import Paginator from "../component/Paginator";
 import Button from "../component/Button";
 import AboutSection from "../component/AboutSection";
 import Slider from "../component/Slider";
+import Founder from "../component/Founder";
 
 export default function About() {
     return (
@@ -34,14 +35,23 @@ export default function About() {
                 >
                     See Our Services
                 </Button>
-                <Button variant="navy">
-                    Meet Our Team
+                <Button variant="navy"
+                    onClick={() =>
+                        document
+                            .getElementById("founder")
+                            ?.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                            })
+                    }>
+                    Meet Our Founder
                 </Button>
             </Hero>
 
             <AboutSection />
+            <Founder id="founder" />
             <Slider id="services" />
-
+            
             <Paginator />
         </div>
     );
