@@ -7,7 +7,7 @@ import {
     FiClock,
 } from "react-icons/fi";
 
-export default function ContactSection() {
+export default function ContactSection({ id }) {
 
     const [form, setForm] = useState({
         fullName: "",
@@ -52,7 +52,7 @@ export default function ContactSection() {
     };
 
     return (
-        <section className="contact-section">
+        <section id={id} className="contact-section">
 
             <div className="contact-header">
 
@@ -107,7 +107,7 @@ export default function ContactSection() {
                         style={{ border: 0 }}
                         loading="lazy"
                     />
-                    
+
                 </div>
 
                 <form className="contact-form" onSubmit={handleSubmit}>

@@ -15,11 +15,19 @@ export default function Contact() {
                 title="We’re Ready, Are You?"
                 text="Have a question, need a custom quote, or want to partner up? Our team is available 24/7 to keep your business moving forward."
             >
-                <Button variant="gold">
+                <Button variant="gold"
+                    onClick={() =>
+                        document
+                            .getElementById("getInTouch")
+                            ?.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                            })
+                    }>
                     Get in Touch Now
                 </Button>
             </Hero>
-            <ContactSection />
+            <ContactSection id="getInTouch" />
             <Paginator />
         </div>
     );
