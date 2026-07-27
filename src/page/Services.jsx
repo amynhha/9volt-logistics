@@ -19,8 +19,8 @@ export default function Services() {
                 <Button variant="gold" link="/shippers#quote">
                     Request a Freight Quote
                 </Button>
-                <Button variant="navy">
-                    Talk to a Specialist
+                <Button variant="navy" link="/contact#getInTouch">
+                    Get in Touch
                 </Button>
             </Hero>
             <Paginator />
