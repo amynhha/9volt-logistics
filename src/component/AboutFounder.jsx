@@ -26,7 +26,7 @@ export default function AboutFounder({ id }) {
                         to bring a higher standard of reliability to the road. 
                     </p>
 
-                    <Button variant="gold" link="/founder">
+                    <Button variant="gold" link="/founder#intro">
                         Learn More
                     </Button>
 

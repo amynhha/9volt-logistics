@@ -1,5 +1,6 @@
 import { FaArrowRight, FaShieldAlt, FaBullseye, FaHandshake, FaBolt } from "react-icons/fa";
 import hasanImg from "../assets/hasan.jpg";
+import BackButton from "./BackButton";
 
 const valueIcons = {
     Integrity: <FaShieldAlt />,
@@ -27,10 +28,10 @@ export default function FounderSlide({ founder, nextFounder, prevFounder, curren
 
     return (
         <div className="fs-slide">
-
             {/* ── HERO ── */}
-            <div className="fs-hero">
+            <div className="fs-hero" id="intro">
                 <div className="fs-hero-left">
+                    <BackButton />
                     <p className="fs-eyebrow">/ Founder Story</p>
                     <h1 className="fs-name">
                         {founder.name.split(" ")[0]}<br />
@@ -145,7 +146,7 @@ export default function FounderSlide({ founder, nextFounder, prevFounder, curren
                         onClick={prevFounder}
                         style={{ cursor: "pointer" }}
                     >
-                         <FaArrowRight
+                        <FaArrowRight
                             className="fs-next-card-arrow"
                             style={{ transform: "rotate(180deg)" }}
                         />
@@ -184,10 +185,10 @@ export default function FounderSlide({ founder, nextFounder, prevFounder, curren
                         style={{ cursor: "pointer" }}
                     >
                         <div className="fs-next-card-img-wrap">
-                            <div className="fs-coming-soon-silhouette" />
+                            <img src={hasanImg} alt="Hasan" className="fs-next-card-img" />
                         </div>
                         <div className="fs-next-card-info">
-                            <p className="fs-eyebrow">Co-Founder Story</p>
+                            <p className="fs-eyebrow" >Co-Founder Story</p>
                             <h3>Coming Soon</h3>
                         </div>
                         <FaArrowRight className="fs-next-card-arrow" />

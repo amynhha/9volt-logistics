@@ -1,5 +1,4 @@
 import hasan from "../assets/hasan.jpg";
-import cofounder from "../assets/cofounder.jpg";
 
 export const founders = [
   {
@@ -27,9 +26,9 @@ export const founders = [
 
   {
     id: 2,
-    name: "Co-Founder",
+    name: "Co- Founder",
     title: "Coming Soon",
-    image: cofounder,
+    image: hasan,
 
     intro:
       "Logistics isn’t just about moving freight - it’s about honouring a promise.",

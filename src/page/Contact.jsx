@@ -4,6 +4,7 @@ import Hero from "../component/Hero";
 import contact from "../assets/contact.jpg"
 import Paginator from "../component/Paginator";
 import Button from "../component/Button";
+import ContactSection from "../component/ContactSection";
 
 export default function Contact() {
     return (
@@ -18,6 +19,7 @@ export default function Contact() {
                     Get in Touch Now
                 </Button>
             </Hero>
+            <ContactSection />
             <Paginator />
         </div>
     );
