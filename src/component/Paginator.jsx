@@ -10,10 +10,14 @@ import {
     FaFacebookF,
     FaInstagram,
 } from "react-icons/fa";
-
+import { useLocation, Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 export default function Paginator() {
+
+    const location = useLocation();
+    const currentHash = location.hash;
+
     return (
         <footer className="footer">
 
@@ -98,9 +102,19 @@ export default function Paginator() {
 
                     <ul>
 
-                        <li><NavLink to="/contact"><FiChevronRight />Request a Quote</NavLink></li>
+                        <li>
+                            <Link to="/shippers">
+                                <FiChevronRight />
+                                Request a Quote
+                            </Link>
+                        </li>
 
-                        <li><NavLink to="/carriers"><FiChevronRight />Become a Carrier</NavLink></li>
+                        <li>
+                            <Link to="/carriers">
+                                <FiChevronRight />
+                                Become a Carrier
+                            </Link>
+                        </li>
 
                     </ul>
 
@@ -113,11 +127,38 @@ export default function Paginator() {
 
                     <ul>
 
-                        <li><NavLink to="/legal"><FiChevronRight />Privacy Policy</NavLink></li>
+                        <li>
+                            <Link
+                                to="/legal#privacy"
+                                className={currentHash === "#privacy" ? "active" : ""}
+                            >
+                                <FiChevronRight />
+                                Privacy Policy
+                            </Link>
+                        </li>
 
-                        <li><NavLink to="/legal"><FiChevronRight />Terms & Conditions</NavLink></li>
 
-                        <li><NavLink to="/legal"><FiChevronRight />Claims Policy</NavLink></li>
+                        <li>
+                            <Link
+                                to="/legal#terms"
+                                className={currentHash === "#terms" ? "active" : ""}
+                            >
+                                <FiChevronRight />
+                                Terms & Conditions
+                            </Link>
+                        </li>
+
+
+                        <li>
+                            <Link
+                                to="/legal#claims"
+                                className={currentHash === "#claims" ? "active" : ""}
+                            >
+                                <FiChevronRight />
+                                Claims Policy
+                            </Link>
+                        </li>
+
 
                     </ul>
 

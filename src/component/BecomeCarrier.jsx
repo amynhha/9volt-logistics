@@ -1,5 +1,5 @@
 import {
-    FaFileDownload,
+    FaExternalLinkSquareAlt,
     FaTruckMoving,
     FaPhoneAlt,
     FaMoneyCheckAlt,
@@ -125,7 +125,7 @@ export default function BecomeCarrier({ id }) {
 
                     <div className="carrier-box-title">
 
-                        <FaFileDownload />
+                        <FaExternalLinkSquareAlt />
 
                         <h3>Carrier Packet</h3>
 
@@ -146,7 +146,7 @@ export default function BecomeCarrier({ id }) {
 
                             <h4>Carrier Packet</h4>
 
-                            <span>View Carrier Packet</span>
+                            <span>View</span>
 
                         </div>
 

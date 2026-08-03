@@ -1,8 +1,8 @@
 import "../App.css";
 import NavBar from "../component/NavBar";
+import Paginator from "../component/Paginator";
 import Hero from "../component/Hero";
 import aboutUsWider from "../assets/aboutUs_wider.png";
-import Paginator from "../component/Paginator";
 import Button from "../component/Button";
 import AboutSection from "../component/AboutSection";
 import Slider from "../component/Slider";

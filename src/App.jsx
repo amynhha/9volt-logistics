@@ -10,11 +10,13 @@ import About from "./page/About";
 import Contact from "./page/Contact";
 import Legal from "./page/Legal";
 import ScrollToHash from "./component/ScrollToHash";
+import ScrollToTop from "./component/ScrollToTop";
 import Founder from "./page/Founder";
 
 export default function App() {
     return (
         <>
+            <ScrollToTop />
             <ScrollToHash />
             <Routes>
                 <Route path="/" element={<Navigate to="/home" replace />} />

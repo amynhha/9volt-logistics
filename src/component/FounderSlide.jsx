@@ -20,6 +20,15 @@ const valueDescriptions = {
 
 export default function FounderSlide({ founder, nextFounder, prevFounder, current, total }) {
 
+    const changeFounder = (action) => {
+        action();
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+    
     const storyParagraphs = founder.story
         ? founder.story.split("\n").filter(p => p.trim())
         : [];
@@ -143,7 +152,7 @@ export default function FounderSlide({ founder, nextFounder, prevFounder, curren
                 {!isFirst && (
                     <div
                         className="fs-next-card"
-                        onClick={prevFounder}
+                        onClick={() => changeFounder(prevFounder)}
                         style={{ cursor: "pointer" }}
                     >
                         <FaArrowRight
@@ -181,7 +190,7 @@ export default function FounderSlide({ founder, nextFounder, prevFounder, curren
                 {isFirst && (
                     <div
                         className="fs-next-card"
-                        onClick={nextFounder}
+                        onClick={() => changeFounder(nextFounder)}
                         style={{ cursor: "pointer" }}
                     >
                         <div className="fs-next-card-img-wrap">
